@@ -12,6 +12,7 @@ $ git clone https://github.com/doremi/seven.git
 https://github.com/doremi/seven/archive/master.zip
 
 接著
+
 1. 到 chrome://extensions
 2. 把「開發人員模式」打勾選取
 3. 按下「載入未封裝擴充功能」
