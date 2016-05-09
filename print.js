@@ -1,6 +1,21 @@
-/*global NextStep, document*/
+/*global NextStep, document, $*/
 
-NextStep.PinCodeNumber.value = document.all["pinno"].innerHTML;
 NextStep.action = "PrintC2CPinCode.aspx";
 NextStep.target = "";
-NextStep.submit();
+
+var regex = /^取號中/;
+var pinno = $('#pinno').text();
+
+if (!pinno.match(regex)) {
+    NextStep.PinCodeNumber.value = pinno;
+    NextStep.submit();
+} else {
+    $('#pinno').bind("DOMSubtreeModified", function () {
+        "use strict";
+        var pinno = $(this).text();
+        if (!pinno.match(/^取號中/)) {
+            NextStep.PinCodeNumber.value = pinno;
+            NextStep.submit();
+        }
+    });
+}
