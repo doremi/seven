@@ -20,4 +20,6 @@ https://github.com/doremi/seven/archive/master.zip
 
 成功之後, 就會在 Chrome 的工具列看到有一個剪刀的圖示：
 
-接著到需要列印服務單的網頁, 再按下剪刀的圖示, 這個 extension 就會幫你把服務單下面移除, 同時修改條碼大小, 接著就可以把這個網頁列印出來了！
+![screenshot](https://raw.githubusercontent.com/doremi/seven/master/screenshot.png)
+
+接著到需要列印服務單的網頁, 這個 extension 就會自動幫你按下「顯示交貨便服務單」, 同時修改條碼大小, 接著就可以把這個網頁列印出來了！
